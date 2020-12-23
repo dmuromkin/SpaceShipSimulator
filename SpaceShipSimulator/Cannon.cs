@@ -11,9 +11,9 @@ namespace SpaceShipSimulator
 {
     public class Cannon : GameUnitManager
     {
-        protected new BulletsManager _bulletsManager;
+        private BulletsManager _bulletsManager;
         private GameUnit _owner;
-        protected Texture2D _bulletTex;
+        private Texture2D _bulletTex;
 
 
         public void Fire()

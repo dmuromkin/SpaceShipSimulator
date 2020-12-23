@@ -9,11 +9,9 @@ namespace SpaceShipSimulator
 {
     public class GameUnit
     {
-        protected Texture2D _tex;
-        protected Vector2 _pos;
+        private Texture2D _tex;
+        private Vector2 _pos;
         protected Color _color;
-        protected GameUnitManager unitManager;
-        protected List<GameUnit> _enemy;
 
         public Texture2D Texture
         {

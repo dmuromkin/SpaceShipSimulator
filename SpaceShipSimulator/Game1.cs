@@ -11,18 +11,18 @@ namespace SpaceShipSimulator
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        protected SpaceshipController _spaceshipController;// управление ракетой
-        protected HighScoreFile _scoreFile;// файл с лучшим результатом
-        protected BulletsManager _bulletsManager;
-        protected Texture2D _backgroundTexture, _spaceShipTexture, _bulletTexture;
-        protected Texture2D _gameOverTexture, _asteroidTexture;
-        protected GameUnitManager _unitManager;
-        protected int _screenWidth, _screenHeight;
-        protected int _prevHighscore, _points;// рекорд, текущее кол-во очков
-        protected double _miliseconds;// период времени для добавления нового астероида 
-        protected SpriteFont _spritefont;
-        protected bool collision;// проверка столкновения
-        protected string ScorePath; 
+        private SpaceshipController _spaceshipController;// управление ракетой
+        private HighScoreFile _scoreFile;// файл с лучшим результатом
+        private BulletsManager _bulletsManager;
+        private Texture2D _backgroundTexture, _spaceShipTexture, _bulletTexture;
+        private Texture2D _gameOverTexture, _asteroidTexture;
+        private GameUnitManager _unitManager;
+        private int _screenWidth, _screenHeight;
+        private int _prevHighscore, _points;// рекорд, текущее кол-во очков
+        private double _miliseconds;// период времени для добавления нового астероида 
+        private SpriteFont _spritefont;
+        private bool collision;// проверка столкновения
+       
 
         public Game1()
         {
@@ -44,7 +44,6 @@ namespace SpaceShipSimulator
             base.Initialize();
             
             collision = false; //столкновения не было
-            // путь к файлу с рекордом
             _spaceshipController = new SpaceshipController(this);
             _scoreFile = new HighScoreFile();
             _unitManager = new GameUnitManager(_spaceShipTexture);

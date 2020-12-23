@@ -8,8 +8,8 @@ namespace SpaceShipSimulator
 {
    public class HighScoreFile
     {
-        protected int _highscore;
-        protected string _scorePath;
+        private int _highscore;
+        private string _scorePath;
 
         // получение последнего рекорда
         public int Read()

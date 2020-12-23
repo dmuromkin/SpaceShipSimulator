@@ -10,13 +10,13 @@ namespace SpaceShipSimulator
 {
     public class GameUnitManager : GameUnit
     {
-        protected List<GameUnit> _enemyUnits = new List<GameUnit>(); // список астероидов
-        protected Cannon _cannon;
-        protected GameUnit _playerShip;// корабль игрока
-        protected int _borderLeft, _borderRight, points;
-        protected BulletsManager _bulletsManager;
-        protected Vector2 _speed;// скорость астероидов
-        protected Rectangle _unitRect, _enemyRect;
+        private List<GameUnit> _enemyUnits = new List<GameUnit>(); // список астероидов
+        private Cannon _cannon;
+        private GameUnit _playerShip;// корабль игрока
+        private int _borderLeft, _borderRight, points;
+        private Vector2 _speed;// скорость астероидов
+        private Rectangle _unitRect, _enemyRect;
+
 
         public GameUnitManager(Texture2D tex) : base(tex)
         {

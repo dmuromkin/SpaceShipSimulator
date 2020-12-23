@@ -10,12 +10,12 @@ namespace SpaceShipSimulator
 {
     public class BulletsManager : DrawableGameComponent
     {
-        protected SpriteBatch _batch;
-        protected List<GameUnit> _bullets;
-        protected Rectangle _boundsRectangle;
-        protected Texture2D _bulletText, _asteroidText;
-        protected GameUnitManager _gameUnitManager;
-        protected Vector2 _bulletSpeed;
+        private SpriteBatch _batch;
+        private List<GameUnit> _bullets;
+        private Rectangle _boundsRectangle;
+        private Texture2D _bulletText, _asteroidText;
+        private GameUnitManager _gameUnitManager;
+        private Vector2 _bulletSpeed;
 
         public void AddBullet(GameUnit bullet)
         {

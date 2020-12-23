@@ -9,9 +9,9 @@ namespace SpaceShipSimulator
 {
     public class SpaceshipController : DrawableGameComponent
     {
-        protected GameUnit _subject;
-        protected Cannon _cannon;
-        protected KeyboardState _previousKs;
+        private GameUnit _subject;
+        private Cannon _cannon;
+        private KeyboardState _previousKs;
 
         public void Attach(GameUnit subject)
         {
